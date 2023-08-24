@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh+Sans', sans-serif;
+}
+
+/* base styles */
+body {
+    font-size: 12px;
+    background: linear-gradient(var(--bg-violet), var(--bg-blue));
+    height: 100svh;
+}
+
+.container {
+    width: 95%;
+    margin-top: 20px;
+    border: 2px solid var(--blue-text);
+    border-radius: 20px;
+    background: hsla(0, 0%, 100%, 1);
+}
+
+.accordion {
+    width: 100%;
+    padding: 30px 20px;
+}
+
+
+/* variables */
+:root {
+    --blue-text: hsl(238, 29%, 16%);
+    --red-text: hsl(14, 88%, 65%);
+    --gray-blue-text: hsl(237, 12%, 33%);
+    --fog: hsl(240, 6%, 50%);
+    --dividers: hsl(240, 5%, 91%);
+
+    /* background gradient colors */
+    --bg-violet: hsl(273, 75%, 66%);
+    --bg-blue: hsl(240, 73%, 65%);
+}
+
