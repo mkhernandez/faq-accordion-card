@@ -12,36 +12,39 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="img">
-      <img src="./images/illustration-woman-online-mobile.svg" alt="">
-    </div>
+  <div class="img grid">
+    <img class="woman" src="./images/illustration-woman-online-mobile.svg" alt="">
+    <img class="base" src="./images/bg-pattern-mobile.svg" alt="">
+  </div>
+  
+  <div class="container grid">
+    <h2>FAQ</h2>
     <div class="accordion">
       <input type="radio" name="faq-accordion" id="team-member-section" class="accordion-input">
       <label for="team-member-section" class="accordion-label">How many team members can I invite?</label>
-      <div>
+      <div class="accordion-content">
         You can invite up to 2 additional users on the Free plan. There is no limit on 
         team members for the Premium plan.
       </div>
       <input type="radio" name="faq-accordion" id="max-file-upload-section" class="accordion-input">
       <label for="max-file-upload-section" class="accordion-label">What is the maximum file upload size?</label>
-      <div>
+      <div class="accordion-content">
         No more than 2GB. All files in your account must fit your allotted storage space.
       </div>
       <input type="radio" name="faq-accordion" id="reset-password-section" class="accordion-input">
       <label for="reset-password-section" class="accordion-label">How do I reset my password?</label>
-      <div>
+      <div class="accordion-content">
         Click “Forgot password” from the login page or “Change password” from your profile page.
         A reset link will be emailed to you.
       </div>
       <input type="radio" name="faq-accordion" id="cancel-subscription-section" class="accordion-input">
       <label for="cancel-subscription-section" class="accordion-label">Can I cancel my subscription?</label>
-      <div>
+      <div class="accordion-content">
         Yes! Send us a message and we’ll process your request no questions asked.
       </div>
       <input type="radio" name="faq-accordion" id="additional-support-section" class="accordion-input">
       <label for="additional-support-section" class="accordion-label">Do you provide additional support?</label>
-      <div>
+      <div class="accordion-content">
         Chat and email support is available 24/7. Phone lines are open during normal business hours.
       </div>
     </div>
