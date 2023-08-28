@@ -23,7 +23,7 @@ h2 {
     justify-content: center;
     align-items: flex-end;
     grid-column: 4/6;
-    font-size: 3.6em;
+    font-size: 3.1em;
     font-weight: 700;
 }
 
@@ -34,10 +34,9 @@ h2 {
 
 .container {
     width: 350px;
-    /* max-width: 500px; */
-    height: 500px;
+    height: 520px;
     margin: 20px auto;
-    border: 2px solid var(--blue-text);
+    outline: none;
     border-radius: 20px;
     background: hsla(0, 0%, 100%, 1);
 
@@ -45,7 +44,7 @@ h2 {
 
 .img {
     position: relative;
-    height: 35%;
+    height: 25%;
 }
 
 .img .woman {
@@ -54,7 +53,7 @@ h2 {
     justify-content: center;
     align-items: flex-start;
     position: absolute;
-    top: -58.5%;
+    top: -79%;
     left: 11%;
     min-width: 225px;
 }
@@ -102,10 +101,11 @@ h2 {
     top: 50%;
     transform: translateY(-50%);
     right: 0;
-    width: 8px;
-    height: 6px;
+    width: 12px;
+    height: 10px;
     font-size: 1.5em;
     background-image: url(./images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
     background-size: contain;
     transition: transform 0.4s;
 }
@@ -117,6 +117,11 @@ h2 {
 .accordion-content {
     line-height: 1.6;
     display: none;
+    transition: 0.5s ease;
+}
+
+.accordion-input:checked ~ .accordion-content {
+    display: block;
 }
 
 /* variables */
@@ -130,5 +135,9 @@ h2 {
     /* background gradient colors */
     --bg-violet: hsl(273, 75%, 66%);
     --bg-blue: hsl(240, 73%, 65%);
+}
+
+.attribution {
+    margin: 35px auto;
 }
 
