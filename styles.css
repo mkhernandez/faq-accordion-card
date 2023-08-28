@@ -45,7 +45,7 @@ h2 {
 
 .img {
     position: relative;
-    height: 40%;
+    height: 35%;
 }
 
 .img .woman {
@@ -54,7 +54,7 @@ h2 {
     justify-content: center;
     align-items: flex-start;
     position: absolute;
-    top: -51.5%;
+    top: -58.5%;
     left: 11%;
     min-width: 225px;
 }
@@ -89,6 +89,7 @@ h2 {
     transition: background 0.2s;
     font-size: 1.1em;
     border-bottom: 0.05em solid var(--fog);
+    height: 45px;
 }
 
 .accordion-label:hover {
