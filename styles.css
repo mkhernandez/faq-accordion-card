@@ -42,6 +42,10 @@ h2 {
 
 }
 
+.bg-desktop {
+    display: none;
+}
+
 .img {
     position: relative;
     height: 25%;
@@ -139,5 +143,60 @@ h2 {
 
 .attribution {
     margin: 35px auto;
+}
+
+/* media queries */
+@media screen and (min-width: 700px) {
+    body {
+        font-size: 20px;
+    }
+    
+    .container {
+        display: flex;
+        width: 800px;
+        height: 500px;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .bg-desktop {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .bg-desktop-woman {
+        position: absolute;
+        top: 10%;
+        left: -20%;
+    }
+
+    .bg-desktop-box {
+        position: absolute;
+        top: 51%;
+        left: 5%;
+        z-index: 1;
+    }
+
+    .bg-desktop-pattern {
+        position: absolute;
+        top: 30%;
+        left: -50%;
+        width: 500px;
+        height: 250px;
+    }
+
+    .img {
+    
+        display: none;
+    }
+
+    .accordion {
+        width: 50%;
+        height: 100%;
+    }
 }
 
